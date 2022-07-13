@@ -1,0 +1,11 @@
+---
+- hosts: all
+  tasks:
+ - name:creating multiple files at a time 
+    file:
+     path: opt/{{item}}
+     state: touch
+   with_items:
+      - sum.java
+      - hello.java
+      -  sql.txt 
