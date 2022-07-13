@@ -1,0 +1,7 @@
+ ---
+ - hosts: all
+   tasks:
+   - name: creating a directory
+      file:
+       path: opt/devops2
+       state: directory
